@@ -31,9 +31,12 @@ const About = () => {
         initial={{opacity:0 ,x:100}}
         transition={{duration:0.5 }}
         className=" w-full lg:w-1/2 ">
-                <div className="flex justify-center lg:justify-start">
+                <div className="flex justify-center lg:justify-start ">
                     <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
                 </div>
+                <div className="flex lg:ml-0 md:ml-16">
+                <a href="./src/assets/pdf/cv.pdf" download="cv.pdf" className="max-w-xl bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Dowload CV</a>
+                </div >
             </motion.div>
       </div>
     </div>
